@@ -8,7 +8,6 @@
 			props: {
 				examples
 			},
-			maxage: 60
 		};
 	}
 </script>

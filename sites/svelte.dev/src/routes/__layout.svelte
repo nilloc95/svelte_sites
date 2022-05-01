@@ -4,7 +4,9 @@
 	import { page, navigating, session } from '$app/stores';
 	import { Icon, Icons, Nav, NavItem, SkipLink } from '@sveltejs/site-kit';
 	import PreloadingIndicator from '$lib/components/PreloadingIndicator.svelte';
+	let word = '';
 
+	
 	setContext('app', {
 		login: () => {
 			const login_window = window.open(
@@ -46,6 +48,10 @@
 			<NavItem href="/repl">REPL</NavItem>
 			<NavItem href="/blog">Blog</NavItem>
 			<NavItem href="/faq">FAQ</NavItem>
+			<!-- {#if $page.url.pathname == '/docs'}
+			<NavItem href="#">Press CTRL + K to Search</NavItem>
+			{/if} -->
+			
 		</svelte:fragment>
 
 		<svelte:fragment slot="nav-right">

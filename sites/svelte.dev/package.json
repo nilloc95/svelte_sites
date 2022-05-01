@@ -33,6 +33,7 @@
 		"prettier-plugin-svelte": "^2.6.0",
 		"shelljs": "^0.8.5",
 		"svelte": "^3.46.3",
+		"svelte-quicksearch-bar": "^1.0.5",
 		"vite-imagetools": "^4.0.3"
 	}
 }
